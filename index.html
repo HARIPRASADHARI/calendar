@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="css/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/moment.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/calendar.js"></script>
+	<script type="text/javascript" src="js/lib/fullcalendar.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body ng-app="calendar" ng-cloak>
+	<div ng-controller="calendarCtrl" class="calendar">
+		<div ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
+	</div>
+</body>
+
+</html>
